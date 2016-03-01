@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Synology Download Manager</title>
+  <link rel="stylesheet" href="assets/plugins/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <script id="item-template" type="x-tmpl-mustache">
+  <div class="item">
+    <div class="name">{{title}}</div>
+    <div class="progress">
+      <div class="label">{{progress}}%</div>
+      <div class="bar" style="width: {{progress}}%"></div>
+    </div>
+    <div class="status">{{size}} - {{status}}</div>
+    <div class="pause">&#10073;&#10073;</div>
+    <div class="play">&#9654;</div>
+  </div>
+  </script>
+  <div id="menu">
+    <div class="left">
+      <div class="title">Sync</div>
+      <div class="count">99</div>
+    </div>
+    <div class="right">
+      <div class="icon-settings"></div>
+    </div>
+  </div>
+  <div id="content">
+  </div>
+  <script>window.$ = window.jQuery = require('./assets/plugins/jquery-2.2.1.min.js');</script>
+  <script>window.Mustache = require("./assets/plugins/mustache.min.js");</script>
+  <script>require("./assets/js/main.js");</script>
+</body>
+</html>

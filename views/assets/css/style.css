@@ -1,0 +1,94 @@
+body {
+  -webkit-user-select: none;
+  background-color: #ffffff;
+}
+#menu {
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 50px;
+  background-color: #2196F3;
+  line-height: 50px;
+}
+#menu .left {
+  float: left;
+}
+#menu .left > div {
+  float: left;
+}
+#menu .right {
+  float: right;
+}
+#menu .right > div {
+  float: right;
+}
+#menu .title {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0 10px;
+}
+#menu .count {
+  text-align: center;
+  line-height: 35px;
+  font-weight: bold;
+  background-color: #4CAF50;
+  width: 35px;
+  height: 35px;
+  border-radius: 3px;
+  margin: 7.5px 0;
+}
+#content {
+  overflow-y: scroll;
+  height: 300px;
+}
+#content .item {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#content .item .name {
+  font-size: 11px;
+  font-weight: bold;
+  color: black;
+}
+#content .item .progress {
+  position: relative;
+  margin: 3px 0;
+  width: 100%;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#content .item .progress .label {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 25px;
+}
+#content .item .progress .bar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #4CAF50;
+}
+#content .item .status {
+  display: inline-block;
+  font-size: 11px;
+  color: black;
+}
+#content .item .pause,
+#content .item .play {
+  display: inline-block;
+}
+.icon-settings {
+  width: 50px;
+  height: 50px;
+  background: url("../images/Settings-32.png") no-repeat center;
+  cursor: pointer;
+}
+.icon-settings:hover {
+  background-color: #0c7cd5;
+}

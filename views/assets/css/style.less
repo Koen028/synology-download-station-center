@@ -1,0 +1,104 @@
+//out: style.css, sourcemap: true, compress: false
+// background-colors
+@accent-background-color: #2196F3;
+@good-background-color: #4CAF50;
+// text-colors
+@text-primary-light: rgb(255,255,255);
+@text-secondary-light: rgba(255,255,255,0.7);
+
+body{
+  -webkit-user-select: none;
+  background-color: rgb(255,255,255);
+}
+#menu {
+  //-webkit-app-region: drag;
+  box-sizing: border-box;
+  color: @text-secondary-light;
+  width: 100%;
+  height: 50px;
+  background-color: #2196F3;
+  line-height: 50px;
+  .left{
+    float: left;
+    > div{
+      float: left;
+    }
+  }
+  .right{
+    float: right;
+    > div{
+      float: right;
+    }
+  }
+  .title{
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  .count{
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+    background-color: @good-background-color;
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+    margin: 7.5px 0;
+  }
+}
+
+#content{
+  overflow-y: scroll;
+  height: 300px;
+  .item{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    .name{
+      font-size: 11px;
+      font-weight: bold;
+      color: black;
+    }
+    .progress{
+      position: relative;
+      margin: 3px 0;
+      width: 100%;
+      height: 25px;
+      background-color: rgba(0, 0, 0, 0.2);;
+      .label{
+        font-size: 12px;
+        color: rgba(0,0,0,0.8);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 25px;
+      }
+      .bar{
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background-color: @good-background-color;
+      }
+    }
+    .status{
+      display: inline-block;
+      font-size: 11px;
+      color: black;
+    }
+    .pause, .play{
+      display: inline-block;
+    }
+  }
+}
+
+.icon-settings{
+  width: 50px;
+  height: 50px;
+  background: url("../images/Settings-32.png") no-repeat center;
+  cursor: pointer;
+}
+.icon-settings:hover{
+  background-color: darken(@accent-background-color, 10%);
+}
