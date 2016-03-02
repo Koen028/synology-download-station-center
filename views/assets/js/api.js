@@ -1,6 +1,6 @@
-const username = "Koen";
-const password = "Mainframe08!";
-const baseUrl = "http://rackoen.com:5000/webapi/";
+const username = "";
+const password = "";
+const baseUrl = "";
 
 var sid = null;
 
