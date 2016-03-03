@@ -1,6 +1,8 @@
-const username = "";
-const password = "";
-const baseUrl = "";
+const auth = require("./auth.json");
+
+const username = auth.username;
+const password = auth.password;
+const baseUrl = auth.baseurl;
 
 var sid = null;
 
@@ -19,7 +21,7 @@ module.exports = {
   },
   getList: function(callback){
     var data = null;
-    $.get(baseUrl + "/DownloadStation/task.cgi?api=SYNO.DownloadStation.Task&version=1&method=list&_sid=" + sid, function(res){
+    $.get(baseUrl + "DownloadStation/task.cgi?api=SYNO.DownloadStation.Task&version=1&method=list&_sid=" + sid, function(res){
       data = res;
       if(typeof callback === "function"){
         callback(data);
