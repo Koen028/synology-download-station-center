@@ -1,5 +1,6 @@
 body {
   -webkit-user-select: none;
+  cursor: default;
   background-color: #ffffff;
 }
 #menu {
@@ -63,14 +64,15 @@ body {
   font-size: 12px;
   color: rgba(0, 0, 0, 0.8);
   position: absolute;
+  z-index: 2;
   width: 100%;
   height: 100%;
   text-align: center;
   line-height: 25px;
 }
 #content .item .progress .bar {
+  z-index: 1;
   position: absolute;
-  width: 0%;
   height: 100%;
   background-color: #4CAF50;
 }
@@ -80,8 +82,10 @@ body {
   color: black;
 }
 #content .item .pause,
-#content .item .play {
+#content .item .play,
+#content .item .delete {
   display: inline-block;
+  cursor: pointer;
 }
 .icon-settings {
   width: 50px;

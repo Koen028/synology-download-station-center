@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "electron-positioner": "^2.0.3",
-    "electron-prebuilt": "^0.36.9"
+    "electron-prebuilt": "^0.36.9",
+    "perfect-scrollbar": "^0.6.10"
   }
 }

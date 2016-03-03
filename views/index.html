@@ -8,21 +8,22 @@
 </head>
 <body>
   <script id="item-template" type="x-tmpl-mustache">
-  <div class="item">
+  <div class="item" data-id="{{id}}">
     <div class="name">{{title}}</div>
     <div class="progress">
       <div class="label">{{progress}}%</div>
       <div class="bar" style="width: {{progress}}%"></div>
     </div>
     <div class="status">{{size}} - {{status}}</div>
+    <div class="delete">&#215;</div>
     <div class="pause">&#10073;&#10073;</div>
     <div class="play">&#9654;</div>
   </div>
   </script>
   <div id="menu">
     <div class="left">
-      <div class="title">Sync</div>
-      <div class="count">99</div>
+      <div class="title">SynoDS Center</div>
+      <div class="count">0</div>
     </div>
     <div class="right">
       <div class="icon-settings"></div>
