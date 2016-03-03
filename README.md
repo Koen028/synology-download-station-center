@@ -1,4 +1,5 @@
 # SynoDS Center
+[![devDependencies Status](https://david-dm.org/koen028/synology-download-station-center/dev-status.svg)](https://david-dm.org/koen028/synology-download-station-center#info=devDependencies)
 ### What is it?
 The SynoDS Center is a cross-platform application that allows you to view, add
 and change your downloads on a Synology NAS with DownloadStation.
