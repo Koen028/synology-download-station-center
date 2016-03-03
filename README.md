@@ -6,13 +6,19 @@ The SynoDS Center is a cross-platform application that allows you to view, add
 and change your downloads on a Synology NAS with DownloadStation.
 
 ### The Latest Version
-
+Follow [@Koen028](https://twitter.com/Koen028) on Twitter for important announcements.
 
 ### Documentation
 
 
 ### Installation
+```sh
+# Install the required dependencies with npm
+npm install
 
+# Start it by calling the npm script test
+npm test
+```
 
 ### Licensing
 Please see the file called LICENSE
